@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+    Search Results
+    </title>
+    <link rel="stylesheet" href="/styles.css">
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow" />
+</head>
+    
+<body>
+    <%- include("navBar.ejs") %>
+    
+    <div class = "container">
+        <h1> MangaDex search result for <%= query %>
+        </h1>
+        <img id="manga-cover" src="<%= manga_photo %>" alt="<%= manga_title %> cover" />
+
+        <div id="manga-info">
+            <h2 id="manga-title">
+                <%= manga_title %>
+            </h2>
+
+            <div id="author"> written by <%= manga_author %></div>
+
+            <div id="manga-rating">
+                <span>
+                   rating: <%= manga_rating %>
+                </span>
+            </div>
+
+    
+
+            <p id="manga-desc">
+                Description: <%=  manga_description %>
+            </p>
+
+            
+            <br/>
+            <a href="/">Go back to home</a>
+        </div>
+    </div>
+</body>
+
+</html>

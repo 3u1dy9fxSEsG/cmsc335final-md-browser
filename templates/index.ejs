@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+   
+    <head>
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex, nofollow" />
+        <title>Home</title>
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+         
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <%- include("navBar.ejs") %>
+        <div class="home_section">
+       <div id="snow" data-count="200"></div>
+
+       <div class="tenor-gif-embed" data-postid="1092577769995428031" data-share-method="host" data-aspect-ratio="0.887097" data-width="100%"><a href="https://tenor.com/view/christmas-anime-gif-1092577769995428031">Christmas Anime Sticker</a>from <a href="https://tenor.com/search/christmas-stickers">Christmas Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+       
+
+            <h1 id="search-bar">Search for your Manga</h1>
+            <p>Get information about your Manga</p>
+
+            <form action="/results" method="GET">
+                <input type="text" name="title" placeholder="Enter manga title" required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </body>
+</html>
